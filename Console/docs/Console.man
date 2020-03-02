@@ -1,0 +1,38 @@
+Console Command  [Version 1.0.0]
+(C) Copyright 1997-2009 Author Kiyotaka Abe.
+
+Console.exe 
+	show
+	show key
+	set key=value
+	method {
+		beep
+		beep 音 ラ- | ラ-＃ | シ- | ド | ド# | レ | ・・・
+未		beep i t
+		beep ff(final fantasy) | kaeru | mario | dq(dragon quest)
+		clear
+未		SetWindowPosition x,y
+未		SetWindowSize w,h
+×		sw(stop watch) start | stop
+	}
+	key {
+		BufferHeight
+		BufferWidth
+		CapsLock
+		NumberLock
+		CursorTop
+		CursorLeft
+		CursorSize
+		CursorVisible
+		ForegroundColor
+		BackgroundColor
+		InputEncoding
+		OutputEncoding
+		LargestWindowHeight
+		LargestWindowWidth
+		Title
+		WindowHeight
+		WindowLeft
+		WindowTop
+		WindowWidth
+	}

@@ -1,0 +1,11 @@
+Cal Command  [Version 1.0.0]
+(C) Copyright 1997-2010 Author Kiyotaka Abe.
+
+Cal.exe [month | year | y]
+
+options
+    month 1～12      今年の指定月度を表示
+    month 201001     指定月度を表示
+    year  13～9999   指定年を表示
+    y     "y"        当年を表示
+    none             今月を表示
