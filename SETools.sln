@@ -9,6 +9,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALauncher", "ALauncher\ALau
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALib", "ALib\ALib.csproj", "{4A0C098A-0284-459E-9831-39EF09EE6CEE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bin", "bin", "{63C164CF-D6CF-4129-8B84-35261D061E2D}"
+	ProjectSection(SolutionItems) = preProject
+		bin\ALauncher.exe = bin\ALauncher.exe
+		bin\ALib.dll = bin\ALib.dll
+		bin\ALib.pdb = bin\ALib.pdb
+		bin\SPing.exe = bin\SPing.exe
+		bin\SPing.exe.config = bin\SPing.exe.config
+		bin\SPing.pdb = bin\SPing.pdb
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{77750D27-A91E-4BE0-8999-07DFC5E849D1}"
+	ProjectSection(SolutionItems) = preProject
+		bin\docs\ALauncher.man = bin\docs\ALauncher.man
+		bin\docs\SPing.man = bin\docs\SPing.man
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +58,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77750D27-A91E-4BE0-8999-07DFC5E849D1} = {63C164CF-D6CF-4129-8B84-35261D061E2D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DDE3CA7D-F52E-439E-8F8C-39C8661E91C1}
