@@ -1,0 +1,72 @@
+SqlConnection con = new SqlConnection("Server=(local);User ID=sa;Password=TCOS;Database=MST");
+con.Open();
+
+SqlCommand cmd = new SqlCommand("fjdskf", con);
+cmd.ExecuteNonQuery();
+
+
+
+
+---<例外内容、コンシュマー向け>---
+メイン処理の実行に失敗。
+ストアド プロシージャ 'fjdskf' が見つかりませんでした。
+---<例外の内容、開発者向け>---
+System.ApplicationException: メイン処理の実行に失敗。
+--> System.Data.SqlClient.SqlException: ストアド プロシージャ 'fjdskf' が見つか
+りませんでした。
+   場所 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Bool
+ean breakConnection)
+   場所 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException excepti
+on, Boolean breakConnection)
+   場所 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateO
+bject stateObj)
+   場所 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand
+cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, T
+dsParserStateObject stateObj)
+   場所 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName
+, Boolean async)
+   場所 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult r
+esult, String methodName, Boolean sendToPipe)
+   場所 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   場所 SReplace.Program.GetEncoding(String p) 場所 D:\kiyo\Windows\Deveropment\
+46_ファイル内の文字列置換(SReplace)\SReplace\SReplace\Program.cs:行 43
+   場所 SReplace.Program.Main(String[] args) 場所 D:\kiyo\Windows\Deveropment\46
+_ファイル内の文字列置換(SReplace)\SReplace\SReplace\Program.cs:行 21
+   --- 内部例外スタック トレースの終わり ---
+   場所 SReplace.Program.Main(String[] args) 場所 D:\kiyo\Windows\Deveropment\46
+_ファイル内の文字列置換(SReplace)\SReplace\SReplace\Program.cs:行 25
+---詳細
+{Message="メイン処理の実行に失敗。",Data=[ListDictionaryInternal]System.Collecti
+ons.ListDictionaryInternal,InnerException=System.Data.SqlClient.SqlException: ス
+トアド プロシージャ 'fjdskf' が見つかりませんでした。
+   場所 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Bool
+ean breakConnection)
+   場所 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException excepti
+on, Boolean breakConnection)
+   場所 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateO
+bject stateObj)
+   場所 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand
+cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, T
+dsParserStateObject stateObj)
+   場所 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName
+, Boolean async)
+   場所 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult r
+esult, String methodName, Boolean sendToPipe)
+   場所 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   場所 SReplace.Program.GetEncoding(String p) 場所 D:\kiyo\Windows\Deveropment\
+46_ファイル内の文字列置換(SReplace)\SReplace\SReplace\Program.cs:行 43
+   場所 SReplace.Program.Main(String[] args) 場所 D:\kiyo\Windows\Deveropment\46
+_ファイル内の文字列置換(SReplace)\SReplace\SReplace\Program.cs:行 21
+---詳細
+{Errors=[SqlErrorCollection]System.Data.SqlClient.SqlErrorCollection,Class=16,Li
+neNumber=1,Number=2812,Procedure="",Server="(local)",State=62,Source=".Net SqlCl
+ient Data Provider",ErrorCode=-2146232060,Message="ストアド プロシージャ 'fjdskf
+' が見つかりませんでした。",Data=[ListDictionaryInternal]System.Collections.List
+DictionaryInternal,InnerException=null,TargetSite=[RuntimeMethodInfo]Void OnErro
+r(System.Data.SqlClient.SqlException, Boolean),StackTrace=この内容はコード(実装)
+により、表示されません。,HelpLink=null},TargetSite=[RuntimeMethodInfo]Void Main(
+System.String[]),StackTrace=この内容はコード(実装)により、表示されません。,HelpL
+ink=null,Source="SReplace"}
+
+
+
