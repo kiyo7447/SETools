@@ -1,0 +1,9 @@
+ALauncher Command  [Version 1.0.0]
+(C) Copyright 1997-2011 Author Kiyotaka Abe.
+
+ALauncher.exe [オプション] [定義ファイル]
+×  /HELP     ヘルプ(/?)
+    /D        デバックモード（エラーメッセージを詳細表示）
+    /S        設定
+    A
+    
