@@ -12,6 +12,8 @@ namespace SPing
 {
 	/// <summary>
 	/// pingに数秒待てない人用の強化版ping
+	/// 
+	/// 2020/3/3 あれ？こればバグでは？pingクラスを処理ごとにインスタンスを用意するべきです。
 	/// </summary>
 	class Program
 	{

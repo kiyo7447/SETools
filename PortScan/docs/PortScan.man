@@ -1,0 +1,23 @@
+﻿Port Scan Command  [Version 1.0.0]
+(C) Copyright 1997-2012 Author Kiyotaka Abe.
+
+
+ポートスキャン 1-65535
+scheckport.exe IPアドレス|ホスト名
+
+scheckport.exe IPアドレス|ホスト名 Port番号-Port番号
+
+scheckport.exe IPアドレス|ホスト名 Port番号
+
+パラメータ
+  -t タイムアウト値(s)     デフォルト2秒、最大21秒
+  
+
+共通
+  戻り値(%ERRORLEVEL%)     0:成功、0以外:失敗
+  
+
+   ThreadPoolを使ってポートスキャンを実施するべき
+
+開発残
+  IPv6対応はまだです。
