@@ -21,7 +21,7 @@ namespace PortScan
 			parameter.Port.All(c =>{_portScanResult.Add(c, new PortScanResult { Host = parameter.Host, Port = c}); return true;});
 			_portScanResult.All(dic => { ThreadPool.QueueUserWorkItem(new WaitCallback(Scan), dic); return true; });
 
-			Console.WriteLine($"ポートスキャンを開始します3。{_portScanResult.Min(c => c.Value.Port)}-{_portScanResult.Max(c => c.Value.Port)}");
+			Console.WriteLine($"ポートスキャンを開始します4。{_portScanResult.Min(c => c.Value.Port)}-{_portScanResult.Max(c => c.Value.Port)}");
 
 
 			//WorkerThread Default 25
