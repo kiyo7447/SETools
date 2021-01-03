@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SReplace", "SReplace\SReplace.csproj", "{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AFrameworkLib", "..\..\AFrameworkLib\AFrameworkLib\AFrameworkLib.csproj", "{4A0C098A-0284-459E-9831-39EF09EE6CEE}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectUniqueName0 = ..\\..\\AFrameworkLib\\AFrameworkLib\\AFrameworkLib.csproj
+		SccProjectName0 = \u0022$/開発環境/500_SolutionUsers/200904_SWG/20080822_標準環境/SVR/AFramework\u0022,\u0020ZYVCAAAA
+		SccLocalPath0 = ..\\..\\AFrameworkLib\\AFrameworkLib
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName1 = SReplace\\SReplace.csproj
+		SccProjectName1 = \u0022$/開発環境/500_SolutionUsers/200904_SWG/20080822_標準環境/SVR/SReplace\u0022,\u0020YYVCAAAA
+		SccLocalPath1 = SReplace
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A0C098A-0284-459E-9831-39EF09EE6CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A0C098A-0284-459E-9831-39EF09EE6CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A0C098A-0284-459E-9831-39EF09EE6CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A0C098A-0284-459E-9831-39EF09EE6CEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

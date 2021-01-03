@@ -28,6 +28,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bin", "bin", "{63C164CF-D6C
 		bin\SPing.exe = bin\SPing.exe
 		bin\SPing.exe.config = bin\SPing.exe.config
 		bin\SPing.pdb = bin\SPing.pdb
+		bin\SReplace.exe = bin\SReplace.exe
+		bin\SReplace.exe.config = bin\SReplace.exe.config
+		bin\SReplace.pdb = bin\SReplace.pdb
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{77750D27-A91E-4BE0-8999-07DFC5E849D1}"
@@ -47,6 +50,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortScan", "PortScan\PortScan.csproj", "{345FFCDF-45BD-44FD-8937-398079E27AA7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{76AE238C-5A6A-4997-A4D5-0BA5A729C508}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SReplace", "SReplace\SReplace.csproj", "{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -220,6 +225,26 @@ Global
 		{76AE238C-5A6A-4997-A4D5-0BA5A729C508}.Release|x64.Build.0 = Release|Any CPU
 		{76AE238C-5A6A-4997-A4D5-0BA5A729C508}.Release|x86.ActiveCfg = Release|Any CPU
 		{76AE238C-5A6A-4997-A4D5-0BA5A729C508}.Release|x86.Build.0 = Release|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Debug|ARM.Build.0 = Debug|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Debug|x64.Build.0 = Debug|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Debug|x86.Build.0 = Debug|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Release|ARM.ActiveCfg = Release|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Release|ARM.Build.0 = Release|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Release|ARM64.Build.0 = Release|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Release|x64.ActiveCfg = Release|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Release|x64.Build.0 = Release|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Release|x86.ActiveCfg = Release|Any CPU
+		{9B5C4FBA-D5F1-4C7F-97FC-936488DFB681}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
