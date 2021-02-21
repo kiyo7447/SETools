@@ -1,6 +1,11 @@
 using System;
-using System.Diagnostics;
+using System.Collections.Generic;
+using System.Text;
+using System.IO;
 using System.Reflection;
+using System.Diagnostics;
+using System.Collections;
+using System.Threading;
 
 namespace SConsole
 {
@@ -10,7 +15,7 @@ namespace SConsole
 		{
 			if (args.Length < 1)
 			{
-				Console.WriteLine("ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½Bï¿½}ï¿½jï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½mï¿½Fï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B");
+				Console.WriteLine("ƒpƒ‰ƒ[ƒ^‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñBƒ}ƒjƒ…ƒAƒ‹‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢B");
 				return 1;
 			}
 
@@ -32,7 +37,7 @@ namespace SConsole
 				return 0;
 			}
 			/*
-			 *ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ß‚Ü‚ï¿½ï¿½Bï¿½ï¿½ï¿½Rï¿½Íƒvï¿½ï¿½ï¿½Zï¿½Xï¿½Ô‚Ì’lï¿½Ì•ÛŽï¿½ï¿½ï¿½ï¿½Â‹ï¿½ï¿½Ïï¿½ï¿½Å‚Í‚Å‚ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½ß‚Å‚ï¿½ï¿½B 
+			 *‚±‚ê‚Í‚ ‚«‚ç‚ß‚Ü‚·B——R‚ÍƒvƒƒZƒXŠÔ‚Ì’l‚Ì•ÛŽ‚ðŠÂ‹«•Ï”‚Å‚Í‚Å‚«‚È‚¢‚½‚ß‚Å‚·B 
 			if (args[0].ToUpper() == "SW")
 			{
 				if (args[1].ToUpper() == "START")
@@ -65,14 +70,14 @@ namespace SConsole
 
 			if (args[0].ToUpper() == "SET")
 			{
-				string[] kv = args[1].Split(new char[] { '=' });
-
+				string[] kv = args[1].Split(new char[]{ '=' });
+				
 				Type con = typeof(Console);
 				PropertyInfo propertyInfo = con.GetProperty(kv[0]);
 
 				if (propertyInfo == null)
 				{
-					Console.Out.WriteLine("ï¿½wï¿½è‚³ï¿½ê‚½ï¿½Lï¿½[ï¿½ï¿½ï¿½Í‘ï¿½ï¿½Ý‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½BKey=" + kv[0]);
+					Console.Out.WriteLine("Žw’è‚³‚ê‚½ƒL[î•ñ‚Í‘¶Ý‚µ‚Ü‚¹‚ñBKey=" + kv[0]);
 					return 1;
 				}
 
@@ -109,10 +114,10 @@ namespace SConsole
 					}
 					catch (Exception ex)
 					{
-						throw new SystemException("ï¿½wï¿½è‚³ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½Rï¿½[ï¿½hï¿½yï¿½[ï¿½Wï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Å‚ï¿½ï¿½Bï¿½Rï¿½[ï¿½hï¿½yï¿½[ï¿½W=" + kv[1], ex);
+						throw new SystemException("Žw’è‚³‚ê‚Ä‚¢‚éƒR[ƒhƒy[ƒW‚ª•s³‚Å‚·BƒR[ƒhƒy[ƒW=" + kv[1], ex);
 					}
 					o = encoding;
-
+					
 					//Console.OutputEncoding = System.Text.Encoding.UTF8;
 					//Console.OutputEncoding = System.Text.Encoding.Unicode;
 					//Console.InputEncoding = System.Text.Encoding.UTF8;
@@ -135,7 +140,7 @@ namespace SConsole
 			}
 
 
-			Console.WriteLine("ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½^ï¿½ï¿½ï¿½Ôˆï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½Bï¿½}ï¿½jï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½mï¿½Fï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B");
+			Console.WriteLine("ƒpƒ‰ƒ[ƒ^‚ªŠÔˆá‚Á‚Ä‚¢‚Ü‚·Bƒ}ƒjƒ…ƒAƒ‹‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢B");
 			return 1;
 		}
 
