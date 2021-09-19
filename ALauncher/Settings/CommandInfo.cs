@@ -35,14 +35,14 @@ namespace ALauncher
 				try
 				{
 					clipboardExecFileName = Clipboard.GetText();
-					clipboardExecFileName = clipboardExecFileName.Replace("\n", "").Replace("\r","");
+					clipboardExecFileName = clipboardExecFileName.Replace("\n", "").Replace("\r", "");
 					processStartInfo = new ProcessStartInfo(clipboardExecFileName, Arguments);
 				}
 				catch (Exception ex)
 				{
 					throw new SystemException("クリップボードからの実行コマンドの取得に失敗しました。", ex);
 				}
-			} 
+			}
 			else
 			{
 				processStartInfo = new ProcessStartInfo(FileName, Arguments);

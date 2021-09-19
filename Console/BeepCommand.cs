@@ -15,33 +15,33 @@ namespace SConsole
 			{
 				_melody = new Dictionary<string, int>(30);
 			}
-			_melody.Add("ƒ‰-", 220);
-			_melody.Add("ƒ‰-”", 233);
-			_melody.Add("ƒV-", 247);
-			_melody.Add("ƒh", 262);
-			_melody.Add("ƒh”", 277);
-			_melody.Add("ƒŒ", 294);
-			_melody.Add("ƒ~", 330);
-			_melody.Add("ƒtƒ@", 349);
-			_melody.Add("ƒtƒ@”", 370);
-			_melody.Add("ƒ\", 392);
-			_melody.Add("ƒ\”", 415);
-			_melody.Add("ƒ‰", 440);
-			_melody.Add("ƒ‰”", 466);
-			_melody.Add("ƒV", 494);
-			_melody.Add("ƒh+", 523);
-			_melody.Add("ƒh+”", 554);
-			_melody.Add("ƒŒ+", 587);
-			_melody.Add("ƒŒ+”", 622);
-			_melody.Add("ƒ~+", 659);
-			_melody.Add("ƒtƒ@+", 699);
-			_melody.Add("ƒtƒ@+”", 740);
-			_melody.Add("ƒ\+", 784);
-			_melody.Add("ƒ\+”", 830);
-			_melody.Add("ƒ‰+", 880);
-			_melody.Add("ƒ‰+”", 932);
-			_melody.Add("ƒV+", 988);
-			_melody.Add("ƒh++", 1047);
+			_melody.Add("ãƒ©-", 220);
+			_melody.Add("ãƒ©-ï¼ƒ", 233);
+			_melody.Add("ã‚·-", 247);
+			_melody.Add("ãƒ‰", 262);
+			_melody.Add("ãƒ‰ï¼ƒ", 277);
+			_melody.Add("ãƒ¬", 294);
+			_melody.Add("ãƒŸ", 330);
+			_melody.Add("ãƒ•ã‚¡", 349);
+			_melody.Add("ãƒ•ã‚¡ï¼ƒ", 370);
+			_melody.Add("ã‚½", 392);
+			_melody.Add("ã‚½ï¼ƒ", 415);
+			_melody.Add("ãƒ©", 440);
+			_melody.Add("ãƒ©ï¼ƒ", 466);
+			_melody.Add("ã‚·", 494);
+			_melody.Add("ãƒ‰+", 523);
+			_melody.Add("ãƒ‰+ï¼ƒ", 554);
+			_melody.Add("ãƒ¬+", 587);
+			_melody.Add("ãƒ¬+ï¼ƒ", 622);
+			_melody.Add("ãƒŸ+", 659);
+			_melody.Add("ãƒ•ã‚¡+", 699);
+			_melody.Add("ãƒ•ã‚¡+ï¼ƒ", 740);
+			_melody.Add("ã‚½+", 784);
+			_melody.Add("ã‚½+ï¼ƒ", 830);
+			_melody.Add("ãƒ©+", 880);
+			_melody.Add("ãƒ©+ï¼ƒ", 932);
+			_melody.Add("ã‚·+", 988);
+			_melody.Add("ãƒ‰++", 1047);
 
 		}
 
@@ -50,39 +50,39 @@ namespace SConsole
 			if (kyoku.ToUpper() == "FF")
 			{
 				//final fantasy battle end
-				//ƒhƒhƒhƒh[ƒ\ò[ƒ‰”|ƒh[ƒ‰”ƒh[ 
-				_Beep("ƒh++", 100);
+				//ãƒ‰ãƒ‰ãƒ‰ãƒ‰ãƒ¼ã‚½â™¯ãƒ¼ãƒ©ï¼ƒï¼ãƒ‰ãƒ¼ãƒ©ï¼ƒãƒ‰ãƒ¼ 
+				_Beep("ãƒ‰++", 100);
 				_Sleep(5);
-				_Beep("ƒh++", 100);
+				_Beep("ãƒ‰++", 100);
 				_Sleep(5);
-				_Beep("ƒh++", 100);
+				_Beep("ãƒ‰++", 100);
 				_Sleep(2);
-				_Beep("ƒh++", 500);
+				_Beep("ãƒ‰++", 500);
 				_Sleep(2);
-				_Beep("ƒ\+”", 500);
+				_Beep("ã‚½+ï¼ƒ", 500);
 				_Sleep(2);
-				_Beep("ƒ‰+”", 500);
+				_Beep("ãƒ©+ï¼ƒ", 500);
 				_Sleep(2);
-				_Beep("ƒh++", 400);
+				_Beep("ãƒ‰++", 400);
 				_Sleep(2);
-				_Beep("ƒ‰+”", 100);
-				_Beep("ƒh++", 700);
+				_Beep("ãƒ©+ï¼ƒ", 100);
+				_Beep("ãƒ‰++", 700);
 				return;
 			}
 			if (kyoku.ToUpper() == "MARIO")
 			{
 				//mario 1up
-				//ƒ~Aƒ\Aƒ~AƒhAƒŒAƒ\ 
-				//’á@’á@‚@‚@‚@‚ 
+				//ãƒŸã€ã‚½ã€ãƒŸã€ãƒ‰ã€ãƒ¬ã€ã‚½ 
+				//ä½ã€€ä½ã€€é«˜ã€€é«˜ã€€é«˜ã€€é«˜ 
 				//_Sleep(500);
 				for (int i = 0; i < 1; i++)
 				{
-					_Beep("ƒ~", 50);
-					_Beep("ƒ\", 50);
-					_Beep("ƒ~+", 50);
-					_Beep("ƒh+", 50);
-					_Beep("ƒŒ+", 50);
-					_Beep("ƒ\+", 50);
+					_Beep("ãƒŸ", 50);
+					_Beep("ã‚½", 50);
+					_Beep("ãƒŸ+", 50);
+					_Beep("ãƒ‰+", 50);
+					_Beep("ãƒ¬+", 50);
+					_Beep("ã‚½+", 50);
 					_Sleep(200);
 				}
 
@@ -92,23 +92,23 @@ namespace SConsole
 			if (kyoku.ToUpper() == "DQ")
 			{
 				//dragon quest level up
-				//ƒtƒ@@ƒtƒ@@ƒtƒ@@óƒ~@ƒ\@ƒtƒ@[ 
-				//_Beep("ƒtƒ@+", 120);
+				//ãƒ•ã‚¡ã€€ãƒ•ã‚¡ã€€ãƒ•ã‚¡ã€€â™­ãƒŸã€€ã‚½ã€€ãƒ•ã‚¡ãƒ¼ 
+				//_Beep("ãƒ•ã‚¡+", 120);
 				_Beep(1010, 150);
 				_Sleep(5);
-				//_Beep("ƒtƒ@+", 120);
+				//_Beep("ãƒ•ã‚¡+", 120);
 				_Beep(1010, 150);
 				_Sleep(5);
-				//_Beep("ƒtƒ@+", 150);
+				//_Beep("ãƒ•ã‚¡+", 150);
 				_Beep(1010, 150);
 				_Sleep(0);
-				//_Beep("ƒŒ+”", 160);
+				//_Beep("ãƒ¬+ï¼ƒ", 160);
 				_Beep(915, 150);
 				_Sleep(120);
-				//_Beep("ƒ\+", 120);
+				//_Beep("ã‚½+", 120);
 				_Beep(1150,150);
 				_Sleep(120);
-				//_Beep("ƒtƒ@+", 800);
+				//_Beep("ãƒ•ã‚¡+", 800);
 				_Beep(1010, 700);
 				return;
 
@@ -119,68 +119,68 @@ namespace SConsole
 				if (true)
 				{
 					//song of frog
-					//ƒhƒŒƒ~ƒtƒ@ƒ~ƒŒƒh@@ƒ~ƒtƒ@ƒ\ƒ‰ƒ\ƒtƒ@ƒ~
-					//ƒh@ƒh@ƒh@ƒh@@@ƒhƒhƒŒƒŒƒ~ƒ~ƒtƒ@ƒtƒ@ƒ~@ƒŒ@ƒh
-					_Beep("ƒh", 400);
-					_Beep("ƒŒ", 400);
-					_Beep("ƒ~", 400);
-					_Beep("ƒtƒ@", 400);
-					_Beep("ƒ~", 400);
-					_Beep("ƒŒ", 400);
-					_Beep("ƒh", 400);
+					//ãƒ‰ãƒ¬ãƒŸãƒ•ã‚¡ãƒŸãƒ¬ãƒ‰ã€€ã€€ãƒŸãƒ•ã‚¡ã‚½ãƒ©ã‚½ãƒ•ã‚¡ãƒŸ
+					//ãƒ‰ã€€ãƒ‰ã€€ãƒ‰ã€€ãƒ‰ã€€ã€€ã€€ãƒ‰ãƒ‰ãƒ¬ãƒ¬ãƒŸãƒŸãƒ•ã‚¡ãƒ•ã‚¡ãƒŸã€€ãƒ¬ã€€ãƒ‰
+					_Beep("ãƒ‰", 400);
+					_Beep("ãƒ¬", 400);
+					_Beep("ãƒŸ", 400);
+					_Beep("ãƒ•ã‚¡", 400);
+					_Beep("ãƒŸ", 400);
+					_Beep("ãƒ¬", 400);
+					_Beep("ãƒ‰", 400);
 					_Sleep(300);
 
-					_Beep("ƒ~", 400);
-					_Beep("ƒtƒ@", 400);
-					_Beep("ƒ\", 400);
-					_Beep("ƒ‰", 400);
-					_Beep("ƒ\", 400);
-					_Beep("ƒtƒ@", 400);
-					_Beep("ƒ~", 400);
+					_Beep("ãƒŸ", 400);
+					_Beep("ãƒ•ã‚¡", 400);
+					_Beep("ã‚½", 400);
+					_Beep("ãƒ©", 400);
+					_Beep("ã‚½", 400);
+					_Beep("ãƒ•ã‚¡", 400);
+					_Beep("ãƒŸ", 400);
 					_Sleep(300);
 
 					a = 600;
 					b = 200;
-					_Beep("ƒh", a);
+					_Beep("ãƒ‰", a);
 					_Sleep(b);
 
-					_Beep("ƒh", a);
+					_Beep("ãƒ‰", a);
 					_Sleep(b);
 
-					_Beep("ƒh", a);
+					_Beep("ãƒ‰", a);
 					_Sleep(b);
 
-					_Beep("ƒh", a);
+					_Beep("ãƒ‰", a);
 					_Sleep(b);
 				}
 				a = 200;
 				b = 80;
 				c = 120;
-				_Beep("ƒh", a);
+				_Beep("ãƒ‰", a);
 				_Sleep(b);
-				_Beep("ƒh", a);
+				_Beep("ãƒ‰", a);
 				_Sleep(c);
-				_Beep("ƒŒ", a);
+				_Beep("ãƒ¬", a);
 				_Sleep(b);
-				_Beep("ƒŒ", a);
+				_Beep("ãƒ¬", a);
 				_Sleep(c);
-				_Beep("ƒ~", a);
+				_Beep("ãƒŸ", a);
 				_Sleep(b);
-				_Beep("ƒ~", a);
+				_Beep("ãƒŸ", a);
 				_Sleep(c);
-				_Beep("ƒtƒ@", a);
+				_Beep("ãƒ•ã‚¡", a);
 				_Sleep(b);
-				_Beep("ƒtƒ@", a);
+				_Beep("ãƒ•ã‚¡", a);
 				_Sleep(c);
 
 				b = 100;
-				_Beep("ƒ~", 500);
+				_Beep("ãƒŸ", 500);
 				_Sleep(100);
 
-				_Beep("ƒŒ", 600);
+				_Beep("ãƒ¬", 600);
 				_Sleep(100);
 
-				_Beep("ƒh", 800);
+				_Beep("ãƒ‰", 800);
 				_Sleep(100);
 				return;
 

@@ -6,12 +6,12 @@ using System.Collections;
 namespace ALib
 {
 	/// <summary>
-	/// ���ϐ��֘A��Facade�N���X�Q
+	/// 環境変数関連のFacadeクラス群
 	/// </summary>
 	public class AEmviroment
 	{
 		/// <summary>
-		/// ����������ϐ����g���đS�Ēu�����܂��B
+		/// 文字列を環境変数を使って全て置換します。
 		/// </summary>
 		/// <param name="targetString"></param>
 		/// <returns></returns>

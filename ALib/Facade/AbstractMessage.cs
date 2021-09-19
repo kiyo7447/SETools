@@ -11,7 +11,7 @@ namespace ALib
 		{
 			get
 			{
-				throw new SystemException("ƒvƒƒpƒeƒB‚ªŽÀ‘•‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBAbstractMessage.Normal");
+				throw new SystemException("ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãŒå®Ÿè£…ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚AbstractMessage.Normal");
 			}
 		}
 
@@ -19,7 +19,7 @@ namespace ALib
 		{
 			get
 			{
-				throw new SystemException("ƒvƒƒpƒeƒB‚ªŽÀ‘•‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBAbstractMessage.Normal");
+				throw new SystemException("ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãŒå®Ÿè£…ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚AbstractMessage.Normal");
 			}
 		}
 

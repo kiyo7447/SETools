@@ -40,15 +40,14 @@ namespace ALauncher
 			//プログラムの終了
 			_toolStripMenuItemEndProgram.Click += new EventHandler(_toolStripMenuItemEndProgram_Click);
 
-
 			//設定ファイルの読み込み
 			LoadSetting();
 
 			mainForm.WindowProcHotKey += new WindowProcHotKeyDelegate(mainForm_WindowProcHotKey);
 
+			//ホットキーを登録する
+			_hotKeyManager.RegisterHotKey(_mainForm.Handle);
 
-			_hotKeyManager.RegisterHotKey(_mainForm.Handle);		
-			
 		}
 
 		void mainForm_WindowProcHotKey(int keyCode)
@@ -76,7 +75,21 @@ namespace ALauncher
 
 				throw new SystemException("設定ファイルの読み込みに失敗しました。FileName=" + settingFile, ex);
 			}
-				_hotKeyManager = new HotKeyManager(_settingInfo);
+
+			var env = new ALib.AEmviroment();
+
+
+			_settingInfo.Applications.All(s =>
+			{
+				//環境変数による書き換えを行う。
+				s.CommandInfo.FileName = env.GetParseEmviromentVariables(s.CommandInfo.FileName);
+				s.CommandInfo.Arguments = env.GetParseEmviromentVariables(s.CommandInfo.Arguments);
+				s.CommandInfo.WorkingDirectory = env.GetParseEmviromentVariables(s.CommandInfo.WorkingDirectory);
+				return true;
+			});
+
+			//読み込んだ設定ファイルxmlをマネージャに登録する。
+			_hotKeyManager = new HotKeyManager(_settingInfo);
 		}
 
 		/// <summary>
@@ -96,14 +109,17 @@ namespace ALauncher
 		/// <param name="e"></param>
 		void _notifyIcon_DoubleClick(object sender, EventArgs e)
 		{
+			//ホットキーを解除する
 			_hotKeyManager.UnregisterHotKey(_mainForm.Handle);
 
-			
-			DialogResult ret =  _mainForm.ShowDialog();
+			DialogResult ret = _mainForm.ShowDialog();
 			if (ret == DialogResult.OK)
 			{
+				//設定ファイルの読み込み
 				LoadSetting();
 			}
+
+			//ホットキーを登録する
 			_hotKeyManager.RegisterHotKey(_mainForm.Handle);
 		}
 

@@ -6,7 +6,7 @@ using System.Diagnostics;
 namespace ALib
 {
 	/// <summary>
-	/// TODO Window�ł�ASP�ŁASilverlight�ŁAWPF�łɑΉ�
+	/// TODO Window版やASP版、Silverlight版、WPF版に対応
 	/// </summary>
 	public class ConsoleMessage : AbstractMessage
 	{

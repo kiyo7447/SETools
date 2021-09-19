@@ -25,7 +25,7 @@ namespace ALauncher
 
 		public int Modifiers()
 		{
-			return (Shift?Win32.User.MOD_SHIFT:0)|(Control?Win32.User.MOD_CONTROL:0)|(Alt?Win32.User.MOD_ALT:0)|(Windows?Win32.User.MOD_WIN:0);
+			return (Shift ? Win32.User.MOD_SHIFT : 0) | (Control ? Win32.User.MOD_CONTROL : 0) | (Alt ? Win32.User.MOD_ALT : 0) | (Windows ? Win32.User.MOD_WIN : 0);
 		}
 
 		private bool _shift;
@@ -67,8 +67,8 @@ namespace ALauncher
 			get { return _key; }
 			set { _key = value; }
 		}
-		
-		public override string  ToString()
+
+		public override string ToString()
 		{
 			string r = "";
 			if (Windows) r += "+Win";
@@ -76,7 +76,7 @@ namespace ALauncher
 			if (Alt) r += "+Alt";
 			if (Shift) r += "+Shift";
 			r += "+" + Key;
- 			return r.Substring(1);
+			return r.Substring(1);
 		}
 	}
 }

@@ -8,11 +8,11 @@ using System.Collections;
 namespace System
 {
 	/// <summary>
-	/// ƒfƒoƒbƒOƒƒbƒZ[ƒW‚ğ\’z‚·‚é‚½‚ß‚Ìˆê˜A‚Ìˆ—‚Å‚·B
-	/// ArrayType			{"a","b","c","d"}								StringŒ^
-	/// ArrayType			{1,2,3,4}										StringŒ^ˆÈŠO‚ÌPrimitivŒ^
-	/// DictionaryType		{name="value",name="value",name="value"}		StringŒ^
-	/// DictionaryType		{name=value,name=value,name=value}				StringŒ^ˆÈŠO‚ÌPrimitivŒ^
+	/// ãƒ‡ãƒãƒƒã‚°ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æ§‹ç¯‰ã™ã‚‹ãŸã‚ã®ä¸€é€£ã®å‡¦ç†ã§ã™ã€‚
+	/// ArrayType			{"a","b","c","d"}								Stringå‹
+	/// ArrayType			{1,2,3,4}										Stringå‹ä»¥å¤–ã®Primitivå‹
+	/// DictionaryType		{name="value",name="value",name="value"}		Stringå‹
+	/// DictionaryType		{name=value,name=value,name=value}				Stringå‹ä»¥å¤–ã®Primitivå‹
 	/// ObjectType			{name=[Type]value,name=[Type]value,name=[Type]value}
 	/// </summary>
 	public class Dump
@@ -23,7 +23,7 @@ namespace System
 		*/
 
 		/// <summary>
-		/// ƒIƒuƒWƒFƒNƒg‚ÌƒfƒoƒbƒNƒƒbƒZ[ƒW‚ğæ“¾‚µ‚Ü‚·B
+		/// ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ãƒ‡ãƒãƒƒã‚¯ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å–å¾—ã—ã¾ã™ã€‚
 		/// </summary>
 		/// <param name="obj"></param>
 		/// <param name="buf"></param>
@@ -33,7 +33,7 @@ namespace System
 		}
 
 		/// <summary>
-		/// ƒIƒuƒWƒFƒNƒg‚ÌƒfƒoƒbƒNƒƒbƒZ[ƒW‚ğæ“¾‚µ‚Ü‚·B
+		/// ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ãƒ‡ãƒãƒƒã‚¯ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å–å¾—ã—ã¾ã™ã€‚
 		/// </summary>
 		/// <param name="obj"></param>
 		/// <returns></returns>
@@ -45,7 +45,7 @@ namespace System
 		}
 
 		/// <summary>
-		/// Exceptin‚ÌToString()ƒƒ\ƒbƒh‚Ì‘ã‚í‚è‚Ég—p‚µ‚Ü‚·B
+		/// Exceptinã®ToString()ãƒ¡ã‚½ãƒƒãƒ‰ã®ä»£ã‚ã‚Šã«ä½¿ç”¨ã—ã¾ã™ã€‚
 		/// </summary>
 		/// <param name="ex"></param>
 		/// <returns></returns>
@@ -55,7 +55,7 @@ namespace System
 		}
 
 		/// <summary>
-		/// Exceptin‚ÌToString()ƒƒ\ƒbƒh‚Ì‘ã‚í‚è‚Ég—p‚µ‚Ü‚·B
+		/// Exceptinã®ToString()ãƒ¡ã‚½ãƒƒãƒ‰ã®ä»£ã‚ã‚Šã«ä½¿ç”¨ã—ã¾ã™ã€‚
 		/// </summary>
 		/// <param name="ex"></param>
 		/// <returns></returns>
@@ -63,13 +63,13 @@ namespace System
 		{
 			StringBuilder buf = new StringBuilder(1024);
 			buf.AppendLine(ex.ToString().Replace("--->", Environment.NewLine + "-->"));
-			buf.AppendLine("---Ú×");
+			buf.AppendLine("---è©³ç´°");
 			GetPropertyMessage(ex, buf, new string[] { "StackTrace" });
 			return buf;
 		}
 
 		/// <summary>
-		/// ƒIƒuƒWƒFƒNƒg‚ÌƒvƒƒpƒeƒB‚ÌƒfƒoƒbƒNƒƒbƒZ[ƒW‚ğæ“¾‚µ‚Ü‚·B
+		/// ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã®ãƒ‡ãƒãƒƒã‚¯ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å–å¾—ã—ã¾ã™ã€‚
 		/// </summary>
 		/// <param name="obj"></param>
 		/// <param name="buf"></param>
@@ -107,7 +107,7 @@ namespace System
 					}
 					if (idx != leaveName.Length)
 					{
-						buf.Append(property.Name + "=‚±‚Ì“à—e‚ÍƒR[ƒh(À‘•)‚É‚æ‚èA•\¦‚³‚ê‚Ü‚¹‚ñB");
+						buf.Append(property.Name + "=ã“ã®å†…å®¹ã¯ã‚³ãƒ¼ãƒ‰(å®Ÿè£…)ã«ã‚ˆã‚Šã€è¡¨ç¤ºã•ã‚Œã¾ã›ã‚“ã€‚");
 						continue;
 					}
 				}
@@ -124,7 +124,7 @@ namespace System
 		#region Private Members
 		
 		/// <summary>
-		/// „‰ñ‚·‚é‚æ‚¤‚Èƒ}ƒbƒsƒ“ƒOƒIƒuƒWƒFƒNƒg‚É‚ÍŒ»ƒo[ƒWƒ‡ƒ“‚Å‚Í‘Î‰‚µ‚Ä‚¢‚Ü‚¹‚ñB
+		/// å·¡å›ã™ã‚‹ã‚ˆã†ãªãƒãƒƒãƒ”ãƒ³ã‚°ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã¯ç¾ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã§ã¯å¯¾å¿œã—ã¦ã„ã¾ã›ã‚“ã€‚
 		/// </summary>
 		/// <param name="obj"></param>
 		/// <param name="buf"></param>
@@ -201,10 +201,10 @@ namespace System
 			*/
 			else if (obj is Exception)
 			{
-				//buf‚É—áŠO‚ÌƒGƒ‰[‚ğ’Ç‰Á‚µ‚Ü‚·B
+				//bufã«ä¾‹å¤–ã®ã‚¨ãƒ©ãƒ¼ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 				buf.Append(GetExceptionMessageForDeveloper((Exception)obj));
 			}
-				//List<string>‚ÆList<int>‚ğˆ—
+				//List<string>ã¨List<int>ã‚’å‡¦ç†
 			else if (obj is IList)
 			{
 				IList list = (IList)obj;
@@ -238,7 +238,7 @@ namespace System
 		private static void _GetMessageDataSet(DataSet dataSet, StringBuilder buf)
 		{
 			//abekiyonow
-			//ƒfƒoƒbƒN‚ÌƒŒƒxƒ‹‚É‚æ‚èA‚±‚±‚Å‘S‚Ä‚Ìƒf[ƒ^‚ğƒƒO‚Éo—Í‚·‚éB
+			//ãƒ‡ãƒãƒƒã‚¯ã®ãƒ¬ãƒ™ãƒ«ã«ã‚ˆã‚Šã€ã“ã“ã§å…¨ã¦ã®ãƒ‡ãƒ¼ã‚¿ã‚’ãƒ­ã‚°ã«å‡ºåŠ›ã™ã‚‹ã€‚
 
 //			System.IO.MemoryStream memStream = new System.IO.MemoryStream();
 //			dataSet.WriteXml(memStream, System.Data.XmlWriteMode.IgnoreSchema);

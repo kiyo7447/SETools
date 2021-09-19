@@ -8,11 +8,11 @@ namespace ALib
 	{
 		public virtual void Show(Exception ex)
 		{
-			throw new SystemException("ƒƒ\ƒbƒh‚ªŽÀ‘•‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBAbstractMessageError.Show");
+			throw new SystemException("ãƒ¡ã‚½ãƒƒãƒ‰ãŒå®Ÿè£…ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚AbstractMessageError.Show");
 		}
 		public virtual void Show(string msg)
 		{
-			throw new SystemException("ƒƒ\ƒbƒh‚ªŽÀ‘•‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBAbstractMessageError.Show");
+			throw new SystemException("ãƒ¡ã‚½ãƒƒãƒ‰ãŒå®Ÿè£…ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚AbstractMessageError.Show");
 		}
 	}
 }

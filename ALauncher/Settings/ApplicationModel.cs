@@ -14,7 +14,7 @@ namespace ALauncher
 		{
 		}
 
-		public  ApplicationModel(int id, string name , HotKeyInfo hotKeyInfo, CommandInfo commandInfo)
+		public ApplicationModel(int id, string name, HotKeyInfo hotKeyInfo, CommandInfo commandInfo)
 		{
 			_id = id;
 			_name = name;
@@ -70,14 +70,14 @@ namespace ALauncher
 			set { _commandInfo = value; }
 		}
 
-        //private Process _lastProcess = null;
+		//private Process _lastProcess = null;
 
-        //[XmlIgnore]
-        //public Process LastProcess
-        //{
-        //    get { return _lastProcess; }
-        //    set { _lastProcess = value; }
-        //}
+		//[XmlIgnore]
+		//public Process LastProcess
+		//{
+		//    get { return _lastProcess; }
+		//    set { _lastProcess = value; }
+		//}
 
 	}
 }

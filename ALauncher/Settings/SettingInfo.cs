@@ -18,7 +18,7 @@ namespace ALauncher
 		//    set { _applications = value; }
 		//}
 
-	
+
 		//private List<ApplicationModel> _applications = new List<ApplicationModel>();
 
 		//public List<ApplicationModel> Applications
@@ -45,12 +45,12 @@ namespace ALauncher
 			get { return _test; }
 			set { _test = value; }
 		}
-		
+
 
 		public void Serialize(FileInfo fileInfo)
 		{
 			XmlSerializer serializer = new XmlSerializer(typeof(SettingInfo));
-			using(FileStream stream = new FileStream(fileInfo.FullName, FileMode.Create))
+			using (FileStream stream = new FileStream(fileInfo.FullName, FileMode.Create))
 			{
 				serializer.Serialize(stream, this);
 			}

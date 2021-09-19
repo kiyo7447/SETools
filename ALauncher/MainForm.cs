@@ -24,7 +24,7 @@ namespace ALauncher
 		{
 			InitializeComponent();
 		}
-		
+
 
 		protected override void WndProc(ref Message m)
 		{

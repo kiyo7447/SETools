@@ -8,7 +8,7 @@ namespace ALib
 	{
 		public virtual void Show(string msg)
 		{
-			throw new SystemException("ƒƒ\ƒbƒh‚ªÀ‘•‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB");
+			throw new SystemException("ãƒ¡ã‚½ãƒƒãƒ‰ãŒå®Ÿè£…ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚");
 		}
 
 	}

@@ -14,20 +14,21 @@ namespace ALauncher
 		[STAThread]
 		static void Main()
 		{
-			 try { 
-			Application.EnableVisualStyles();
-			Application.SetCompatibleTextRenderingDefault(false);
+			try
+			{
+				Application.EnableVisualStyles();
+				Application.SetCompatibleTextRenderingDefault(false);
 
-			_mc = new MainComponent();
-			MainForm mf = new MainForm();
+				_mc = new MainComponent();
+				MainForm mf = new MainForm();
 
-			//終了処理
-			Application.ApplicationExit += new EventHandler(Application_ApplicationExit);
+				//終了処理
+				Application.ApplicationExit += new EventHandler(Application_ApplicationExit);
 
-			//初期化
-			_mc.Initialize(mf);
+				//初期化
+				_mc.Initialize(mf);
 
-			Application.Run();
+				Application.Run();
 			}
 			catch (Exception ex)
 			{
