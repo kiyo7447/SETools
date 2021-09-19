@@ -17,8 +17,14 @@ namespace ALib
 		/// <returns></returns>
 		public string GetParseEmviromentVariables(string targetString)
 		{
+			if (targetString == null)
+			{
+				return null;
+			}
+
 			string retString;
 			retString = targetString;
+
 			IEnumerator e = System.Environment.GetEnvironmentVariables().GetEnumerator();
 			while (e.MoveNext())
 			{
