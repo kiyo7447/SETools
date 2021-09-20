@@ -37,6 +37,12 @@ namespace ALauncher
 			//設定画面を開く
 			_notifyIcon.DoubleClick += new EventHandler(_notifyIcon_DoubleClick);
 
+			//設定ファイルを再読み込み
+			_toolStripMenuItemReloadSettingsXML.Click += _toolStripMenuItemReloadSettingsXML_Click;
+
+			//バージョン情報を表示する
+			_toolStripMenuItemVersionInfo.Click += _toolStripMenuItemVersionInfo_Click;
+
 			//プログラムの終了
 			_toolStripMenuItemEndProgram.Click += new EventHandler(_toolStripMenuItemEndProgram_Click);
 
@@ -48,6 +54,33 @@ namespace ALauncher
 			//ホットキーを登録する
 			_hotKeyManager.RegisterHotKey(_mainForm.Handle);
 
+		}
+
+		/// <summary>
+		/// 設定ファイルXMLのリロード
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void _toolStripMenuItemReloadSettingsXML_Click(object sender, EventArgs e)
+		{
+			//ホットキーを解除する
+			_hotKeyManager.UnregisterHotKey(_mainForm.Handle);
+
+			//設定ファイルの読み込み
+			LoadSetting();
+
+			//ホットキーを登録する
+			_hotKeyManager.RegisterHotKey(_mainForm.Handle);
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void _toolStripMenuItemVersionInfo_Click(object sender, EventArgs e)
+		{
+			var versionForm = new VersionForm();
+			versionForm.ShowDialog(_mainForm);
 		}
 
 		void mainForm_WindowProcHotKey(int keyCode)

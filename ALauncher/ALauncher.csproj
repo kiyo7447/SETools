@@ -104,6 +104,12 @@
     </Compile>
     <Compile Include="Settings\CommandInfo.cs" />
     <Compile Include="Settings\ApplicationModel.cs" />
+    <Compile Include="VersionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VersionForm.Designer.cs">
+      <DependentUpon>VersionForm.cs</DependentUpon>
+    </Compile>
     <None Include="app.config" />
     <None Include="docs\ALauncher.docx" />
     <Compile Include="MainForm.cs">

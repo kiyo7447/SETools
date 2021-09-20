@@ -32,7 +32,7 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainComponent));
 			this._notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
 			this._contextMenuStripNotify = new System.Windows.Forms.ContextMenuStrip(this.components);
-			this._toolStripMenuItemSettings = new System.Windows.Forms.ToolStripMenuItem();
+			this._toolStripMenuItemReloadSettingsXML = new System.Windows.Forms.ToolStripMenuItem();
 			this._toolStripMenuItemTestCode = new System.Windows.Forms.ToolStripMenuItem();
 			this._toolStripMenuItemVersionInfo = new System.Windows.Forms.ToolStripMenuItem();
 			this._toolStripMenuItemEndProgram = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +48,7 @@
 			// _contextMenuStripNotify
 			// 
 			this._contextMenuStripNotify.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this._toolStripMenuItemSettings,
+            this._toolStripMenuItemReloadSettingsXML,
             this._toolStripMenuItemTestCode,
             this._toolStripMenuItemVersionInfo,
             this._toolStripMenuItemEndProgram});
@@ -57,9 +57,9 @@
 			// 
 			// _toolStripMenuItemSettings
 			// 
-			this._toolStripMenuItemSettings.Name = "_toolStripMenuItemSettings";
-			this._toolStripMenuItemSettings.Size = new System.Drawing.Size(181, 22);
-			this._toolStripMenuItemSettings.Text = "設定";
+			this._toolStripMenuItemReloadSettingsXML.Name = "_toolStripMenuItemSettings";
+			this._toolStripMenuItemReloadSettingsXML.Size = new System.Drawing.Size(181, 22);
+			this._toolStripMenuItemReloadSettingsXML.Text = "設定XMLの再読み込み";
 			// 
 			// _toolStripMenuItemTestCode
 			// 
@@ -86,7 +86,7 @@
 
 		private System.Windows.Forms.NotifyIcon _notifyIcon;
 		private System.Windows.Forms.ContextMenuStrip _contextMenuStripNotify;
-		private System.Windows.Forms.ToolStripMenuItem _toolStripMenuItemSettings;
+		private System.Windows.Forms.ToolStripMenuItem _toolStripMenuItemReloadSettingsXML;
 		private System.Windows.Forms.ToolStripMenuItem _toolStripMenuItemTestCode;
 		private System.Windows.Forms.ToolStripMenuItem _toolStripMenuItemVersionInfo;
 		private System.Windows.Forms.ToolStripMenuItem _toolStripMenuItemEndProgram;
