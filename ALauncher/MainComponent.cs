@@ -35,7 +35,7 @@ namespace ALauncher
 			//_hotKeyManager = 
 
 			//設定画面を開く
-			_notifyIcon.DoubleClick += new EventHandler(_notifyIcon_DoubleClick);
+			_notifyIcon.Click += new EventHandler(_notifyIcon_Click);
 
 			//プログラムの終了
 			_toolStripMenuItemEndProgram.Click += new EventHandler(_toolStripMenuItemEndProgram_Click);
@@ -107,7 +107,7 @@ namespace ALauncher
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
-		void _notifyIcon_DoubleClick(object sender, EventArgs e)
+		void _notifyIcon_Click(object sender, EventArgs e)
 		{
 			//ホットキーを解除する
 			_hotKeyManager.UnregisterHotKey(_mainForm.Handle);
